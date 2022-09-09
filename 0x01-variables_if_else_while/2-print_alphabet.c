@@ -1,15 +1,23 @@
 #include <stdio.h>
 
-int main(void0)
+/**
+ * main -Entry point
+ *
+ * Description:  a program that prints the alphabet in lowercase
+ *
+ * followed by a new line.
+ *
+ * Return: 0
+ */
+
+int main(void)
 {
-	//declare a variable
+	
 	char alphabet;
 
 	for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
-	{
-		//print the value of the variable
+
 		putchar(alphabet);
-	}
 
 	putchar('\n');
 	return (0);
