@@ -12,18 +12,19 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	printf("%d \n", n);
+	/* The  conditional statement starts here */
 
 if (n > 0)
 {
-	printf("The number is positive \n");
+	printf("n is positive \n");
 }
 else if (n < 0)
 {
-	printf("The number is negative \n");
+	printf("n is negative \n");
 }
 else
 {
-	printf("The number is zero \n");
+	printf("n is zero \n");
 }
 return (0);
 }
