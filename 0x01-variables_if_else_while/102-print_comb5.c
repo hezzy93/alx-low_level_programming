@@ -5,32 +5,26 @@
  */
 int main(void)
 {
-int a, b, c, d;
-for (a = '0'; a <= '9'; a++)
+int n, m, d1, d2, d3, d4;
+for (n = 0; n <= 98; n++)
 {
-for (b = '0'; b <= '9'; b++)
-{
-for (c = '0'; c <= '9'; c++)
-{
-for (d = '0'; d <= '9'; d++)
-{
-if ((a < c) || (a == c && b < d))
-{
-putchar(a);
-putchar(b);
+for (m = n + 1; m <= 99; m++)
+d1 = n / 10
+d2 = n & 10
+putchar(d1 + '0');
+putchar(d2 + '0');
 putchar(' ');
-putchar(c);
-putchar(d);
-if (!(a == '9' && b == '8'))
-{
+d3 = m / 10;
+d4 = m % 10;
+putchar(d3 + '0');
+putchar(d4 + '0');
+if (n != 98 || m != 99)
+}
 putchar(',');
 putchar(' ');
 }
 }
 }
-}
-}
-}
 putchar('\n');
-return (0);
+return (0)
 }
