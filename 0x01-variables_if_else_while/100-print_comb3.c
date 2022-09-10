@@ -5,14 +5,18 @@
  */
 int main(void)
 {
-int digit1, digit2;
-for (digit1 = 0; digit1 < 9; digit1++)
-for (digit2 = digit1 + 1; digit2 < 10; digit2++)
-putchar((digit1 % 10) + '0');
-putchar((digit2 % 10) + '0');
-if	(digit1 == 8 && digit2 == 9)
+int a, b, c;
+a = 0;
+while (a < 100)
+b = a % 10;
+c = a / 10;
+if (c < b)
+putchar(c + '0');
+putchar(b + '0');
+if (a < 89)
 putchar(',');
 putchar(' ');
+a++;
 putchar('\n');
 return (0);
 }
