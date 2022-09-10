@@ -9,8 +9,9 @@ int n, m, d1, d2, d3, d4;
 for (n = 0; n <= 98; n++)
 {
 for (m = n + 1; m <= 99; m++)
-d1 = n / 10
-d2 = n & 10
+{
+d1 = n / 10;
+d2 = n & 10;
 putchar(d1 + '0');
 putchar(d2 + '0');
 putchar(' ');
