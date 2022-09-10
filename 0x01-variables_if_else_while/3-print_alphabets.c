@@ -11,14 +11,14 @@
  
 int main(void)
 {
-	char alphabet;
+char letter;
 
-for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
+for (letter = 'a'; letter <= 'z' ; letter++)
 	
-	putchar(alphabet);
+putchar(letter);
 
-for (alphabet = 'A'; alphabet <= 'Z' ; alphabet++)
+for (letter = 'A'; letter <= 'Z' ; letter++)
 	
-	putchar('\n');
+putchar('\n');
 return (0);
 }
