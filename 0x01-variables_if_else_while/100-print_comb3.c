@@ -5,18 +5,20 @@
  */
 int main(void)
 {
-int a, b, c;
-a = 0;
-while (a < 100)
-b = a % 10;
-c = a / 10;
-if (c < b)
-putchar(c + '0');
-putchar(b + '0');
-if (a < 89)
-putchar(',');
-putchar(' ');
-a++;
+int n;
+int m;
+for (n = 48 ; n <= 57 ; n++)
+{
+	for (m = 48 ; m <= 57 ; m++)
+	{
+		putchar(n);
+		putchar(m);
+		if ((n != 57) || (m !=57))
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+}
 putchar('\n');
 return (0);
-}
