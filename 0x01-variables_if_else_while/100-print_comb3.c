@@ -6,22 +6,23 @@
  */
 int main(void)
 {
-int i, j, k;
-i = 0;
-while (i < 100)
-j = i % 10;
-k = i / 10;
-if (k < j)
+int num1;
+int num2;
+for (num1 = '0'; num1 < '9'; num1++)
+for (num2 = num1 + 1; num2 <= '9' num2++)
 {
-putchar(k + '0');
-putchar(j + '0');
-if (i < 89)
+if (num2 !=num1)
 {
+putchar(num1);
+putchar(num2);
+if (num1 == '8' && num2 == '9')
+{
+continue;
 putchar(',');
 putchar(' ');
 }
-i++;
 }
 putchar('\n');
 return (0);
+}
 }
