@@ -1,31 +1,27 @@
 #include <stdio.h>
 /**
- * main - Prints all possible combinations of two 
- * Return: 0
+ * main - Prints all possible combinations of two
+ * Description: ranging from 0-99, separated by a comma followed by a space.
+ * Return: Always 0
  */
 int main(void)
 {
-int n, m, d1, d2, d3, d4;
-for (n = 0; n <= 98; n++)
+int num1, num2;
+for (num1 = 0; num1 <= 98; num1++)
 {
-for (m = n + 1; m <= 99; m++)
+for (num2 = num1 + 1; num2 <= 99; num2++)
 {
-d1 = n / 10;
-d2 = n & 10;
-putchar(d1 + '0');
-putchar(d2 + '0');
+putchar((num1 / 10) + '0');
+putchar((num1 % 10) + '0');
 putchar(' ');
-d3 = m / 10;
-d4 = m % 10;
-putchar(d3 + '0');
-putchar(d4 + '0');
-if (n != 98 || m != 99)
-}
+putchar((num2 / 10) + '0');
+putchar((num2 % 10) + '0');
+if (num1 == 98 && num2 == 99)
+continue;
 putchar(',');
 putchar(' ');
 }
 }
-}
 putchar('\n');
-return (0)
+eturn (0);
 }
