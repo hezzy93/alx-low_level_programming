@@ -1,23 +1,33 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Return: 0
+ *  main - print numbers from 00 to 99.
+ *  Return: 0 on success
  */
 int main(void)
 {
-int n, m;
-for (n = 48; n <= 57; n++)
+int i = '0';
+int j = '0';
+while (i <= '9')
 {
-	for (m = 48 ; m <= 57 ; m++)
-	{
-		putchar(n);
-		putchar(m);
-		if ((n != 57) || (m !=57))
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
-}
+while (j <= '9')
+{if (!(i > j || i == j))
+{
+putchar(i);
+putchar(j);
+if (i == '8' && j == '9')
+{
 putchar('\n');
+}
+else
+{
+putchar(',');
+putchar(' ');
+}
+}
+j++;
+}
+j = '0';
+i++;
+}
 return (0);
+}
