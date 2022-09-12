@@ -1,13 +1,12 @@
 #include <stdio.h>
 /**
- * main - Prints all possible combinations
+ * main - Entry point
  * Return: 0
  */
 int main(void)
 {
-int n;
-int m;
-for (n = 48 ; n <= 57 ; n++)
+int n, m;
+for (n = 48; n <= 57; n++)
 {
 	for (m = 48 ; m <= 57 ; m++)
 	{
