@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * 
  * main - print numbers from 00 to 99.
- *
+ * Description: ranging from 0-99, separated by a comma followed by a space.
  * Return: 0 on success
  */
 int main(void)
@@ -25,5 +24,5 @@ putchar(' ');
 }
 }
 putchar('\n');
-return(0);
+return (0);
 }
