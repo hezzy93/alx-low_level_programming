@@ -7,34 +7,23 @@
  */
 int main(void)
 {
-int i = 'o';
-int j = '0';
-int k = '0';
-while (i <= '7')
+int digit1, digit2, digit3;
+for (digit1 = 0; digit1 < 9; digit1++)
 {
-while (j <= '8')
+for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 {
-while (k <= '9')
+for (digit3 = digit2 + 1; digit3 < 10; digit3++)
 {
-if (i < j && j < k)
-{
-putchar(i);
-putchar(j);
-putchar(k);
-if (!(i == '7' && j == '8' && k == '9'))
-{
+putchar((digit1 % 10) + '0');
+putchar((digit2 % 10) + '0');
+putchar((digit3 % 10) + '0');
+if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+continue;
 putchar(',');
 putchar(' ');
 }
 }
-k++;
-}
-k = '0';
-j++;
-}
-j = '0';
-i++;
 }
 putchar('\n');
-return (0);
+return(0);
 }

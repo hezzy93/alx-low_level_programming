@@ -1,33 +1,33 @@
 #include <stdio.h>
 /**
- *  main - print numbers from 00 to 99.
- *  Return: 0 on success
+ *  main - print digit combination
+ *
+ *  Description: print two digit combination
+ *
+ *  Return: Always 0 (success)
  */
 int main(void)
 {
-int i = '0';
-int j = '0';
-while (i <= '9')
+int c;
+int d =0;
+while (d < 10)
 {
-while (j <= '9')
-{if (!(i > j || i == j))
+c = 0;
+while (c < 100)
 {
-putchar(i);
-putchar(j);
-if (i == '8' && j == '9')
-{
-putchar('\n');
-}
-else
+putchar('0' + d);
+putchar('0' + c);
+if (c + d !=17)
 {
 putchar(',');
 putchar(' ');
 }
 }
-j++;
+c++;
 }
-j = '0';
-i++;
+d++
 }
+putchar('\n');
 return (0);
 }
+
