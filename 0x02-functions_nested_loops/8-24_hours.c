@@ -14,7 +14,7 @@ void jaeck_bauer(void)
 	{
 		while (minutes <= 59)
 		{
-			hours_remaider = hours % 10;
+			hours_remainder = hours % 10;
 			_putchar(hours / 10 + '0');
 			_putchar(hours_remainder + '0');
 				_putchar(',');
