@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "main.h"
 /**
- *_islower -function to check for lower character
+ * main - Prints the sum of all multiples of 3 or 5 up to 1024
  * @n: is intiger variable for print times table
  * Return: Always 0.
  */
