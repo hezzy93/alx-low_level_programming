@@ -6,16 +6,15 @@
  */
 int main()
 {
-long unsigned int i,sum=0;
-clrscr();
-for(i=0;i<1000;i++)
+int i, n, m, sum;
+sum = 0;
+for (i = 0; i < 1024; i++)
 {
-if((i%5==0)||(i%3==0))
-{
-sum=sum+i;
+n = i % 3;
+m = i % 5;
+if (n == 0 || m == 0)
+sum = sum + i;
 }
-}
-printf("%ld\n",sum);
-getchar();
-return 0;
+printf("%d\n", sum);
+return (0);
 }
