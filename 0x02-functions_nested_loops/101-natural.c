@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- * print_times_table -function that will work out.
+ *_islower -function to check for lower character
  * @n: is intiger variable for print times table
  * Return: Always 0.
  */
 int main(void)
+
 {
 int i, n, m, sum;
 sum = 0;
