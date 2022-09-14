@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * print_times_table - prints times table
+ * print_times_table -function that will work out.
  * @n: is intiger variable for print times table
  * Return: Always 0.
  */
-int main()
+int main(void)
 {
 int i, n, m, sum;
 sum = 0;
