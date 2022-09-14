@@ -2,7 +2,6 @@
 #include "main.h"
 /**
  * main - Prints the sum of all multiples of 3 or 5 up to 1024
- * @n: is intiger variable for print times table
  * Return: Always 0.
  */
 int main(void)
