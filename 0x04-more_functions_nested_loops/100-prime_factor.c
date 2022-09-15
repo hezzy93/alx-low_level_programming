@@ -5,6 +5,7 @@
  * of a number
  * Return: returns 0
  */
+
 int main(void)
 {
 	long number = 612852475143;
