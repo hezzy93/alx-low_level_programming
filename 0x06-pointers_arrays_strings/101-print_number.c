@@ -1,9 +1,11 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * print_number - prints a number
  * @n: Input number
  */
+
 void print_number(int n)
 {
 	int res, temp, expo;
