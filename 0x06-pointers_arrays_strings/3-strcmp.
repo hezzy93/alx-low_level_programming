@@ -10,7 +10,7 @@
  * returns positive number if s1 > s2
  */
 
-int _strmp(char *dest, char *src, int n);
+int _strcmp(char *s1, char *s2)
 {
 	int i = 0, diff = 0;
 
@@ -37,4 +37,4 @@ int _strmp(char *dest, char *src, int n);
 			i++;
 	}
 		return (diff);
-	}
+}
