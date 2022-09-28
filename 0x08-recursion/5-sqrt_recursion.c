@@ -1,5 +1,7 @@
 #include "main.h"
 
+int _sqrt(int, int);
+
 /**
  * _sqrt_recursion- function that returns the natura root
  * @n: the number
