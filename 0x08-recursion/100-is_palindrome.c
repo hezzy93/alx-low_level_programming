@@ -3,7 +3,7 @@
 void check(char *s, int strat, int end, int *flag);
 
 /**
- * is_palindrome - function that returns 1 if a string is a palindrome 
+ * is_palindrome - function that returns 1 if a string is a palindrome
  * @s: string to be checked
  * Return: 1 if s is a palindrome, 0 otherwise
  */
@@ -11,6 +11,7 @@ void check(char *s, int strat, int end, int *flag);
 int is_palindrome(char *s)
 {
 	int flag = 1;
+
 	check(s, 0, _strlen_recursion(s) - 1, &flag);
 	return (flag);
 }
@@ -29,8 +30,8 @@ void check(char *s, int strat, int end, int *flag)
 		if (s[strat] == s[end])
 			*flag *= 1;
 		else
-			*flag *=0;
-		check(s, strat + 1, end -1, flag);
+			*flag *= 0;
+		check(s, strat + 1, end - 1, flag);
 	}
 }
 /**
@@ -40,12 +41,12 @@ void check(char *s, int strat, int end, int *flag)
  */
 int _strlen_recursion(char *s)
 {
-	 int sum = 0;
+int sum = 0;
 
-	 if (*s != '\0')
-	 {
-	 sum++;
-	 sum += _strlen_recursion(s + 1);
-	 }
-	 return (sum);
-	 }
+ if (*s != '\0')
+{
+sum++;
+sum += _strlen_recursion(s + 1);
+}
+return (sum);
+}
