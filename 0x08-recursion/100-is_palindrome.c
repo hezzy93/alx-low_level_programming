@@ -1,6 +1,7 @@
 #include "main.h"
 
-void check(char *s, int strat, int end, int *flag)
+void check(char *s, int strat, int end, int *flag);
+
 /**
  * is_palindrome - function that returns 1 if a string is a palindrome 
  * @s: string to be checked
@@ -16,7 +17,7 @@ int is_palindrome(char *s)
 /**
  * check - checks if a string is a palindrome
  * @s: string to be checked
- * @stert: start index
+ * @start: start index
  * @end: end index
  * @flag: flag to indicate if a string is a palidrome
  * Return: void
@@ -28,21 +29,23 @@ void check(char *s, int strat, int end, int *flag)
 		if (s[start] == s[end])
 			*flag *= 1;
 		else
-			*flage *=0;
+			*flag *=0;
 		check(s, start + 1, end -1, flag);
 	}
 }
 /**
- * _strlen_recursion -calculates the length ofa string
+ * _strlen_recursion - calculates the length of a string
  * @s: string to be used
  * Return: length of the string
  */
 int _strlen_recursion(char *s)
-	(
+{
 	 int sum = 0;
+
 	 if (*s != '\0')
 	 {
 	 sum++;
 	 sum += _strlen_recursion(s + 1);
+	 }
 	 return (sum);
 	 }
