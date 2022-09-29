@@ -24,13 +24,13 @@ int is_palindrome(char *s)
  */
 void check(char *s, int strat, int end, int *flag)
 {
-	if (start <= end)
+	if (strat <= end)
 	{
-		if (s[start] == s[end])
+		if (s[strat] == s[end])
 			*flag *= 1;
 		else
 			*flag *=0;
-		check(s, start + 1, end -1, flag);
+		check(s, strat + 1, end -1, flag);
 	}
 }
 /**
