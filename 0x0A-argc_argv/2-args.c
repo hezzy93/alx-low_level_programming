@@ -8,9 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
+	int i;i
 
-	for (i = 0; i< argc; i++)
+	for (i = 0; i < argc; i++)
 	{
 	printf("argv index %d is = %s\n", i, argv[i]);
 	}
