@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int result = 0, num, i, j;
+	int result = 0, num, i, j, k;
 
 	if (argc == 1)
 		printf("0\n");
@@ -27,6 +27,6 @@ int main(int argc, char *argv[])
 		num = atoi(argv[k]);
 		result += num;
 	}
-	printf("%d\n", sum)
-		return (0)
+	printf("%d\n", num);
+		return (0);
 }
