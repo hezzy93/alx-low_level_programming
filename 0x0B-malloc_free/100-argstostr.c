@@ -51,5 +51,5 @@ char *argstostr(int ac, char **av)
 	}
 	else
 	{
-		return (NULL)
+		return (NULL);
 	}
