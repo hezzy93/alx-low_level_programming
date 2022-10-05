@@ -89,7 +89,7 @@ char **strtow(char *str)
 		if (strings[w] == NULL)
 		{
 			for (; w >= 0; w--)
-				free(string[w]);
+				free(strings[w]);
 
 			free(strings);
 			return (NULL);
