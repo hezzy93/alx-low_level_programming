@@ -9,6 +9,7 @@
  * Return: if function fails -NULL
  * Otherwise -a pointer to the concatenated space in memory.
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concat;
@@ -31,7 +32,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			len = 0;
 
 			for (index = 0; s1[index]; index++)
-			concat[len++] = s2[index];
+				concat[len++] = s1[index];
+
+			for (index = 0; s2[index] && index < n; index++)
+				concat[len++] = s2[index];
 
 			concat[len] = '\0';
 
