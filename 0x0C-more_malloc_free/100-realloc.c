@@ -30,8 +30,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	if (new_size == 0 && ptr != NULL)
 	{
-		free((ptr);
-		return(NULL);
+		free((ptr));
+		return (NULL);
 	}
 
 	ptr_copy = ptr;
@@ -44,3 +44,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 
 	filler = mem;
+
+	for (index = 0; index < old_size && index < new_size; index++)
+	filler[index] = *ptr_copy++;
+
+	free(ptr);
+	return (mem);
+	}
