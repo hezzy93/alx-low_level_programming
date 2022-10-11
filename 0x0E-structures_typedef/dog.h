@@ -17,7 +17,7 @@ struct dog
 };
 
 /**
- * dog_t - Typedef for struct dog
+ * dog_t - Typedef for struct dog, Create alias for dog struct.
  */
 
 typedef struct dog dog_t;
