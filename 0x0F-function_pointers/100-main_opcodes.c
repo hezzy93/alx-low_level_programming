@@ -1,16 +1,14 @@
-#include <stdio.h>
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
- * main - prints opcode of own main function
- * @argc: argument count
- * @argv: array of arguments
- * Return: 1 or 2 on fail, 0 on success
+ * main - print the opcode of it own function
+ * @argc: number of command line arguments
+ * @argv: array of command line arguments
+ * Return: Exit 1 if one arg is not correct, 2 if byte is negative.
  */
 int main(int argc, char *argv[])
 {
-	int bytes, i;
-	unsigned char *func_ptr;
+	short bytes, x;
 
 	if (argc != 2)
 	{
@@ -23,13 +21,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	func_ptr = (unsigned char *)main;
-	i = 0;
-	if (bytes > 0)
-	{
-		while (i < (bytes - 1))
-			printf("%02hhx ", func_ptr[i++]);
-		printf("%hhx\n", func_ptr[i]);
-	}
-	return (0);
+	printf("%02x", *((unsigned char *) (main)));
+	for (x = 1; x < bytes; ++x)
+		printf(" %02x", *((unsigned char *) (main + x)));
+	putchar('\n');
+	exit(EXIT_SUCCESS);
 }
