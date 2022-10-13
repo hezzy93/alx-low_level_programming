@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stadarg.h>
+#include <stdarg.h>
 
 /**
  * print_strings - Prints strings, followed by a new line.
@@ -16,11 +16,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *str;
 	unsigned int index;
 
-	va_start (strings, n);
+	va_start(strings, n);
 
 	for (index = 0; index < n; index++)
 	{
-		str = va_arg (strings, char *);
+		str = va_arg(strings, char *);
 		if (str == NULL)
 			printf("(nil)");
 		else
